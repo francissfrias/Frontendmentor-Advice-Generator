@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Manrope-ExtraBold';
+  src: url(/Manrope-ExtraBold.ttf);
+}
+@font-face {
+  font-family: 'Manrope-SemiBold';
+  src: url(/Manrope-SemiBold.ttf);
+}
+html {
+  @apply h-full;
+}
+body {
+  @apply h-full;
+}
+
+main {
+  @apply h-full;
+}
+:root {
+  font-family: 'Manrope', sans-serif;
+  overflow: hidden;
+}
+/** RESET CSS **/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+* {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+body > header {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
