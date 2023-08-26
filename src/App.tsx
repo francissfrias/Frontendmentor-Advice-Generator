@@ -36,8 +36,13 @@ const App = () => {
       try {
         const { data } = await axios.get('https://api.adviceslip.com/advice');
         setAdvice(data?.slip);
-      } catch (err) {
-        console.log(err);
+        setDisabled(true);
+        setLoading(true);
+      } finally {
+        setTimeout(() => {
+          setDisabled(false);
+          setLoading(false);
+        }, 2000);
       }
     };
     response();
